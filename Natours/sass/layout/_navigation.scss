@@ -34,7 +34,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -25%;
     z-index: 1500;
 
     opacity: 0;
@@ -45,7 +45,7 @@
   &__list {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
@@ -84,12 +84,13 @@
     }
   }
 
-  &__checkbox:checked ~ &__background {
+  &__checkbox:checked~&__background {
     transform: scale(80);
   }
 
-  &__checkbox:checked ~ &__nav {
+  &__checkbox:checked~&__nav {
     opacity: 1;
     width: 100%;
   }
+
 }
